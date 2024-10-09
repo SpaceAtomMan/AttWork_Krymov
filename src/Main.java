@@ -1,23 +1,17 @@
-import java.util.concurrent.TimeUnit;
-
 public class Main {
     public static void main(String[] args) {
 
-        System.out.print("Загружаю...5");
+        ScreenSaver.Saver1(5);
 
-        for (int i = 4; i >= 1; i--) {
 
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-            System.out.printf("..." + i);
-        }
-        System.out.print("... Поехали!");}
+    }
 }
 
+
 /*
+        View view = new ConsoleUI();
+        view.startWork();
+
 HTTPS или SSH https://github.com/SpaceAtomMan/AttWork_Krymov.git
 
 echo "# AttWork_Krymov" >> README.md
